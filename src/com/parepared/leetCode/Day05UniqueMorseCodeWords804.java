@@ -17,26 +17,20 @@ public class Day05UniqueMorseCodeWords804 {
 
     public int uniqueMorseRepresentations(String[] words) {
         String code = "[.-,-...,-.-.,-..,.,..-.,--.,....,..,.---,-.-,.-..,--,-.,---,.--.,--.-,.-.,...,-,..-,...-,.--,-..-,-.--,--..]";
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new HashMap<>();
         String[] codes = code.split(",");
-        String codeStr = null;
+        String codeStr;
         for(int i = 0; i < codes.length; i++) {
             codeStr = codes[i];
-            if(i == 0) {
-                codeStr = codes[i].substring(1, codes[i].length());
-            }
-            if(i == codes.length - 1) {
-                codeStr = codes[i].substring(0, codes[i].length() -1);
-            }
+            if(i == 0) codeStr = codes[i].substring(1, codes[i].length());
+            if(i == codes.length - 1) codeStr = codes[i].substring(0, codes[i].length() -1);
             map.put(String.valueOf((char)(i+97)), codeStr);
         }
         StringBuilder sb = new StringBuilder();
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         for(int j = 0; j < words.length; j++) {
             sb.delete(0, sb.length());
-            for(int k = 0; k < words[j].length(); k++) {
-                sb.append(map.get(String.valueOf(words[j].charAt(k))));
-            }
+            for(int k = 0; k < words[j].length(); k++) sb.append(map.get(String.valueOf(words[j].charAt(k))));
             list.add(sb.toString());
         }
         int count = 1;
@@ -44,19 +38,15 @@ public class Day05UniqueMorseCodeWords804 {
             count = 0;
             return count;
         }
-        String str = null;
-        boolean flag = true;
+        String str;
+        boolean flag;
         for(int i = 1; i < list.size(); i++) {
             flag = true;
             str = list.get(i);
             for(int j = i-1; j >= 0; j--) {
-                if(str.equals(list.get(j))) {
-                    flag = false;
-                }
+                if(str.equals(list.get(j))) flag = false;
             }
-            if(flag) {
-                count++;
-            }
+            if(flag) count++;
         }
         return count;
     }
