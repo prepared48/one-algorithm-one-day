@@ -2,16 +2,16 @@ package com.prepared.DynamicProgramming;
 
 /**
  * @program: algorithms
- * @description: 钢条切割问题
- * @author: zhongshibo
+ * @description: rod cut problem
+ * @author: prepared
  * @create: 2018-09-20 08:06
  **/
 public class CUT_ROD {
 
     /**
      *
-     * @param p 价格数组
-     * @param n 钢条总长度
+     * @param p prices
+     * @param n totoal length of the rod
      */
     public static int cutRod(int [] p, int n) {
         if(n == 0) return 0;
@@ -25,7 +25,7 @@ public class CUT_ROD {
         int n = 4;
 
         int earn = cutRod(p, n);
-        System.out.println("总共能卖：" + earn + "元");
+        System.out.println("total：" + earn + " yuan");
 
     }
 }

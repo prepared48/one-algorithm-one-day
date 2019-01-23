@@ -15,6 +15,7 @@ package com.parepared.leetCode;
  * Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
  */
 public class Day02FlippingAnImage832 {
+
     public int[][] flipAndInvertImage(int[][] A) {
         //0-1，1-0
         for(int i = 0; i < A.length; i++) {

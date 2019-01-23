@@ -1,7 +1,7 @@
 package com.parepared.leetCode;
 
 /**
- * 最长子数组
+ * max subarray
  * Input: [-2,1,-3,4,-1,2,1,-5,4],
  * Output: 6
  * Explanation: [4,-1,2,1] has the largest sum = 6.
@@ -16,8 +16,13 @@ public class Day01MaximumSubarray53 {
     }
 
 
+    /**
+     * rule:
+     * 1 max subarray is in the left half array
+     * 2 max subarray is in the right half array
+     * 3 max subarray is cross left half array and the right half array
+     */
 
-    // 分治
     public static int getMax(int[] nums, int s, int t) {
         if(s >= t) return nums[s];
         int m = (t - s)/2;

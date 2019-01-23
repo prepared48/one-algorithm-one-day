@@ -39,7 +39,6 @@ public class Day05UniqueMorseCodeWords804 {
             }
             list.add(sb.toString());
         }
-
         int count = 1;
         if(list.size() == 0) {
             count = 0;
@@ -60,7 +59,5 @@ public class Day05UniqueMorseCodeWords804 {
             }
         }
         return count;
-
-
     }
 }
