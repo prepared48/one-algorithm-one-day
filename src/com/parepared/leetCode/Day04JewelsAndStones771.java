@@ -11,7 +11,7 @@ package com.parepared.leetCode;
  * Input: J = "aA", S = "aAAbbbb"
  * Output: 3
  */
-public class JewelsAndStones771 {
+public class Day04JewelsAndStones771 {
     public int numJewelsInStones(String J, String S) {
         int num = 0;
         for(int i = 0; i < J.length(); i++) {

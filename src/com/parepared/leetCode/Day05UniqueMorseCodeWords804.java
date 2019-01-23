@@ -13,7 +13,7 @@ import  java.util.*;
  * [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.",
  * "--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
  */
-public class UniqueMorseCodeWords804 {
+public class Day05UniqueMorseCodeWords804 {
 
     public int uniqueMorseRepresentations(String[] words) {
         String code = "[.-,-...,-.-.,-..,.,..-.,--.,....,..,.---,-.-,.-..,--,-.,---,.--.,--.-,.-.,...,-,..-,...-,.--,-..-,-.--,--..]";
