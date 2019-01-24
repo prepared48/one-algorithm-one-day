@@ -30,7 +30,7 @@ public class Day07SearchInsertPosition35 {
     }
 
     /**
-     * a better way from the website:
+     * a better solution from the website:
      * https://leetcode.com/problems/search-insert-position/discuss/224429/My-Java-solution-that-faster-than-100-users
      * @param nums
      * @param target
