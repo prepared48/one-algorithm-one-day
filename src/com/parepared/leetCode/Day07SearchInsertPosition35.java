@@ -18,7 +18,7 @@ public class Day07SearchInsertPosition35 {
 
     public static void main(String[] args) {
 
-        int [] nums = {1,3,5,6};
+        int [] nums = {1,3,5,6,7,9,11,45,100};
         int target = 7;
         System.out.println(searchInsert2(nums, target));
     }
