@@ -1,4 +1,4 @@
-package com.parepared.leetCode;
+package com.prepared.leetCode;
 
 /**
  * leetcode problem 832:
