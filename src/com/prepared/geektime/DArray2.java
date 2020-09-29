@@ -8,14 +8,26 @@ package com.prepared.geektime;
  */
 public class DArray2 {
 
-	private String[] data;
+	private int[] data;
 
 	private int count;
 
 	//	容量
 	private int capacity;
 
-	public DArray2(String[] data, int count, int capacity) {
+	public int[] getData() {
+		return data;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public DArray2(int[] data, int count, int capacity) {
 		this.data = data;
 		this.count = count;
 		this.capacity = capacity;
@@ -27,7 +39,7 @@ public class DArray2 {
 	 * @param capacity
 	 */
 	public DArray2(int capacity) {
-		this.data = new String[capacity];
+		this.data = new int[capacity];
 		this.count = 0;
 		this.capacity = capacity;
 	}
@@ -39,7 +51,7 @@ public class DArray2 {
 	 * @param value 要插入的值
 	 * @return
 	 */
-	public boolean insert(int index, String value) {
+	public boolean insert(int index, int value) {
 		if (count >= this.capacity) {
 			System.out.println("空间不够了, 添加数据失败");
 			return false;
@@ -85,7 +97,7 @@ public class DArray2 {
 	 * @param value
 	 * @return
 	 */
-	public boolean append(String value) {
+	public boolean append(int value) {
 		if (count >= this.capacity) {
 			// 扩容
 			System.out.println("空间不够了, 添加数据失败");
@@ -107,11 +119,11 @@ public class DArray2 {
 
 	public static void main(String[] args) {
 		DArray2 dArray = new DArray2(4);
-		dArray.append("hello");
-		dArray.append("word");
+		dArray.append(1);
+		dArray.append(2);
 		dArray.printAllData();
 		System.out.println("扩容前，数组size = " + dArray.capacity);
-		dArray.insert(2, " java ");
+		dArray.insert(2, 3);
 		dArray.printAllData();
 		System.out.println("扩容后，数组size = " + dArray.capacity);
 		//	删除数据
