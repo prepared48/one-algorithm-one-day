@@ -13,13 +13,35 @@ package com.prepared.leetCode;
  */
 public class Day04JewelsAndStones771 {
 
-    public int numJewelsInStones(String J, String S) {
+    /**
+     * 暴力破解
+     *
+     * @param jewels
+     * @param stones
+     * @return
+     */
+    public static int numJewelsInStones(String jewels, String stones) {
         int num = 0;
-        for(int i = 0; i < J.length(); i++) {
-            for(int j = 0; j < S.length(); j++) {
-                if(S.charAt(j) == J.charAt(i)) num++;
+        for(int i = 0; i < jewels.length(); i++) {
+            for(int j = 0; j < stones.length(); j++) {
+                if(stones.charAt(j) == jewels.charAt(i)) {
+                    num++;
+                }
             }
         }
         return num;
     }
+
+    public static int method2(String jewels, String stones) {
+        int num = 0;
+        for(int i = 0; i < jewels.length(); i++) {
+            for(int j = 0; j < stones.length(); j++) {
+                if(stones.charAt(j) == jewels.charAt(i)) {
+                    num++;
+                }
+            }
+        }
+        return num;
+    }
+
 }
