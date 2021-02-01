@@ -1,5 +1,7 @@
 package com.prepared.leetCode;
 
+import com.prepared.baseutil.PrintUtil;
+
 import java.util.Arrays;
 
 /**
@@ -12,22 +14,20 @@ import java.util.Arrays;
 public class Day11MaxMultiOfThreeNum628 {
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4};
-        int result = maximumProduct(nums);
-        System.out.println(result);
+        int[] nums = {1, 3, 5, 7, 2, 4, 6};
+//        int result = maximumProduct(nums);
+//        System.out.println(result);
+        PrintUtil.print(nums);
     }
 
     public static int maximumProduct(int[] nums) {
         // 排序
         Arrays.sort(nums);
-        print(nums);
-        return Math.max(nums[nums.length - 3]*nums[nums.length-1]*nums[nums.length-2], nums[0]*nums[1]*nums[nums.length-1]);
+        PrintUtil.print(nums);
+        return Math.max(nums[nums.length - 3] * nums[nums.length - 1] * nums[nums.length - 2], nums[0] * nums[1] * nums[nums.length - 1]);
     }
 
-    public static void print(int [] nums) {
-        for(int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + ",");
-        }
-        System.out.println();
-    }
+
+
+
 }
