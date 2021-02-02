@@ -13,7 +13,7 @@ public class QuickSortUtil {
 
     public static void main(String[] args) {
         int[] nums = {1, 3, 5, 7, 2, 4, 6, 8, 111, 10};
-        quickSort(nums);
+        partition(nums, 0, nums.length-1);
         PrintUtil.print(nums);
     }
 
@@ -52,7 +52,7 @@ public class QuickSortUtil {
      * @param r
      * @return
      */
-    private static int partition(int[] nums, int p, int r) {
+    public static int partition(int[] nums, int p, int r) {
         int pivot = nums[r];
         int i = p;
         int temp;

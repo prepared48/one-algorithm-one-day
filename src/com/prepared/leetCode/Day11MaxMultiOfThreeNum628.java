@@ -27,6 +27,13 @@ public class Day11MaxMultiOfThreeNum628 {
         return Math.max(nums[nums.length - 3] * nums[nums.length - 1] * nums[nums.length - 2], nums[0] * nums[1] * nums[nums.length - 1]);
     }
 
+    public static int maximumProduct2(int[] nums) {
+        // 找出最大的 3 个数相乘
+        int k1 = 3;
+        // 最小的 2 个数 和 最大的一个数
+        int k2 = nums.length - 2;
+        return 0;
+    }
 
 
 
