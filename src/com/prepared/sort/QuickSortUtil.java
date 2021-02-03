@@ -12,9 +12,9 @@ import com.prepared.baseutil.PrintUtil;
 public class QuickSortUtil {
 
     public static void main(String[] args) {
-        int[] nums = {1, 3, 5, 7, 2, 4, 6, 8, 111, 10};
-        partition(nums, 0, nums.length-1);
-        PrintUtil.print(nums);
+        int[] nums = {1,3, -1, 4};
+        int[] ints = quickSort(nums);
+        PrintUtil.print(ints);
     }
 
     /**
@@ -22,8 +22,9 @@ public class QuickSortUtil {
      *
      * @param nums
      */
-    public static void quickSort(int[] nums) {
+    public static int[] quickSort(int[] nums) {
         quickSortC(nums, 0, nums.length - 1);
+        return nums;
     }
 
     /**

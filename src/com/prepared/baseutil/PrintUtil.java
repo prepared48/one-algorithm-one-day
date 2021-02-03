@@ -14,4 +14,11 @@ public class PrintUtil {
         }
         System.out.println();
     }
+
+    public static void print(double[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + ",");
+        }
+        System.out.println();
+    }
 }

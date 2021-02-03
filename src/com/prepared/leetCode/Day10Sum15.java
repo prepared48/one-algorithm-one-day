@@ -19,7 +19,7 @@ import java.util.List;
  * @Date 2019/4/28
  * @Version 1.0
  **/
-public class Day103Sum15 {
+public class Day10Sum15 {
 
     public static void main(String[] args) {
         int [] nums = {-1, 0, 1, 2, -1, -4};
