@@ -15,6 +15,8 @@ public class QuickSortUtil {
         int[] nums = {1,3, -1, 4};
         int[] ints = quickSort(nums);
         PrintUtil.print(ints);
+//        partition(nums, 0, 2);
+//        PrintUtil.print(nums);
     }
 
     /**
@@ -28,7 +30,7 @@ public class QuickSortUtil {
     }
 
     /**
-     * 制定起始终止位置的排序
+     * 指定起始终止位置的排序
      *
      * @param nums
      * @param p
@@ -54,22 +56,21 @@ public class QuickSortUtil {
      * @return
      */
     public static int partition(int[] nums, int p, int r) {
+       // 0...i,都是比pivot小的
+        int i = (p - 1);
         int pivot = nums[r];
-        int i = p;
-        int temp;
-        for (int j = p; j < r; j++) {
-            if (nums[j] < pivot) {
-                // 交换nums[i]和nums[j]
-                temp = nums[i];
+        for(int j = p; j < r; j++) {
+            if(nums[j] <= pivot) {
+                i++;
+                int temp = nums[i];
                 nums[i] = nums[j];
                 nums[j] = temp;
-                i = i + 1;
             }
         }
-        // 交换nums[i]和nums[r]
-        temp = nums[i];
-        nums[i] = nums[r];
+        // 交换pivot和num[i+1]
+        int temp = nums[i+1];
+        nums[i+1] = nums[r];
         nums[r] = temp;
-        return r;
+        return i + 1;
     }
 }

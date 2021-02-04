@@ -7,6 +7,8 @@ import com.prepared.sort.QuickSortUtil2;
  * 480. 滑动窗口中位数
  * 因此，返回该滑动窗口的中位数数组 [1,-1,-1,3,5,6]。
  *
+ * 该解法超时
+ *
  * @Author: zhongshibo
  * @Date: 2021/2/3 14:27
  */
@@ -44,7 +46,13 @@ public class Day13SlideWindow480 {
         return res;
     }
 
-
+    /**
+     * 获取数组的前k个元素
+     *
+     * @param nums
+     * @param k
+     * @return
+     */
     public static int[] getKLength(int[] nums, int k) {
         int[] res = new int[k];
         for(int i = 0; i < k; i++) {
