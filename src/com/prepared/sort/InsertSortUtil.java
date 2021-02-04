@@ -4,6 +4,9 @@ import com.prepared.baseutil.PrintUtil;
 
 /**
  * 插入排序
+ * 原地排序算法（不需要额外的空间）
+ * 稳定的排序算法
+ * 时间复杂度：最好O(n) 最差O(n^2) 平均O(n^2)
  *
  * @Author: zhongshibo
  * @Date: 2021/2/3 17:51
