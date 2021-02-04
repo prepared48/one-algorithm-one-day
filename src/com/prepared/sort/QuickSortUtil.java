@@ -12,7 +12,7 @@ import com.prepared.baseutil.PrintUtil;
 public class QuickSortUtil {
 
     public static void main(String[] args) {
-        int[] nums = {1,3, -1, 4};
+        int[] nums = {1,3, -1};
         int[] ints = quickSort(nums);
         PrintUtil.print(ints);
 //        partition(nums, 0, 2);
