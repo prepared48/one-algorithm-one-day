@@ -42,27 +42,11 @@ public class Day16MostWater11 {
     }
 
     /**
-     * 伪 动态规划，超时
+     * 暴力破解 超时
      *
      * @param height
      * @return
      */
-    public int maxArea(int[] height) {
-        int len = height.length;
-        // 包含下标的最大值
-        int[] w = calcW(height, len);
-        return maxArea(height, w, 0, len - 1);
-    }
-
-    public int maxArea(int[] height, int[] w, int s, int t) {
-        int len = t - s;
-        if(len == 0) {
-            return 0;
-        }
-        // 起点坐标到终点坐标的最大值
-        return Math.max(maxArea(height, w, s, t - 1), w[t]);
-    }
-
     public int maxArea2(int[] height) {
         int len = height.length;
         int[] w = calcW(height, len);
