@@ -35,4 +35,22 @@ public class Day15OnlyOnceNum137 {
         }
         return 9999999;
     }
+
+    public static int singleNumber2(int[] nums) {
+        Map<Integer, Integer> resultMap = new HashMap<>();
+        for(int i = 0; i < nums.length; i++) {
+            if(Objects.isNull(resultMap.get(nums[i]))) {
+                resultMap.put(nums[i], 1);
+            }else {
+                resultMap.put(nums[i], resultMap.get(nums[i]) + 1);
+            }
+        }
+        Set<Integer> integerSet = resultMap.keySet();
+        for(Integer num : integerSet) {
+            if(Objects.equals(resultMap.get(num), 1)) {
+                return num;
+            }
+        }
+        return 9999999;
+    }
 }
