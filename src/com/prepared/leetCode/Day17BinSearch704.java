@@ -1,6 +1,8 @@
 package com.prepared.leetCode;
 
 /**
+ * 问题：704 二分查找
+ *
  * @Author: zhongshibo
  * @Date: 2021/5/10 17:01
  */
