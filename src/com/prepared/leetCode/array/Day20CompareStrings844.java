@@ -1,4 +1,4 @@
-package com.prepared.leetCode;
+package com.prepared.leetCode.array;
 
 /**
  * 844. 比较含退格的字符串

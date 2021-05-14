@@ -15,6 +15,15 @@ public class PrintUtil {
         System.out.println();
     }
 
+    public static void print(int[][] nums, int n) {
+        for (int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void print(int[] nums, int end) {
         for (int i = 0; i < end; i++) {
             System.out.print(nums[i] + ",");

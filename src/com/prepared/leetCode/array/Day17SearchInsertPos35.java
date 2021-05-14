@@ -1,4 +1,4 @@
-package com.prepared.leetCode;
+package com.prepared.leetCode.array;
 
 /**
  * 35. 搜索插入位置

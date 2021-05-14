@@ -1,4 +1,4 @@
-package com.prepared.leetCode;
+package com.prepared.leetCode.array;
 
 /**
  * 69. x 的平方根

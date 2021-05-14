@@ -1,4 +1,4 @@
-package com.prepared.leetCode;
+package com.prepared.leetCode.array;
 
 import com.prepared.baseutil.PrintUtil;
 

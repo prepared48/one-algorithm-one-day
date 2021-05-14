@@ -1,4 +1,4 @@
-package com.prepared.leetCode;
+package com.prepared.leetCode.array;
 
 /**
  * 367. 有效的完全平方数
