@@ -2,6 +2,8 @@ package com.prepared.baseutil;
 
 import java.util.List;
 
+import com.prepared.leetCode.LinkedList.ListNode;
+
 /**
  * 打印数据util
  *
@@ -43,6 +45,15 @@ public class PrintUtil {
     public static void print(double[] nums) {
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + ",");
+        }
+        System.out.println();
+    }
+
+    public static void print(ListNode head) {
+        ListNode cur = head;
+        while (cur != null) {
+            System.out.print(cur.val + ", ");
+            cur = cur.next;
         }
         System.out.println();
     }
