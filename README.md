@@ -1,22 +1,28 @@
 # ARTS
 
-Algorithm
+## Algorithm
 
-https://github.com/zhongsb/one-algorithm-one-day
+至少每周完成一道 leetcode 算法题
 
-Review
+完成 https://github.com/youngyangyang04/leetcode-master 这个项目推荐的所有Leetcode题目。
 
-流利阅读
+把自己的解法放在该项目中：https://github.com/zhongsb/one-algorithm-one-day
 
-Tip
+## Review
 
-Share
+流利阅读，锻炼英语阅读能力
 
-https://blog.csdn.net/Prepared
+## Tip
 
-## A - algorithms
 
-do a leetcode algorithm problem everyweek.
+
+## Share
+
+csdn：https://blog.csdn.net/Prepared
+
+个人博客：https://www.geniu.net/
+
+
 
 ---
 
