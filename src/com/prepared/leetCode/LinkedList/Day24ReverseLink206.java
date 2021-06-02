@@ -25,6 +25,12 @@ public class Day24ReverseLink206 {
 
     }
 
+    /**
+     * 迭代法
+     *
+     * @param head
+     * @return
+     */
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode cur = head;
