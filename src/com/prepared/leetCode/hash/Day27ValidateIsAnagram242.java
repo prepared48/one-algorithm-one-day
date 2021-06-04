@@ -1,4 +1,4 @@
-package com.prepared.leetCode.LinkedList;
+package com.prepared.leetCode.hash;
 
 /**
  * 242. 有效的字母异位词

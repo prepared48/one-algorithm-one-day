@@ -1,4 +1,4 @@
-package com.prepared.leetCode.LinkedList;
+package com.prepared.leetCode.hash;
 
 import java.util.HashSet;
 import java.util.Set;

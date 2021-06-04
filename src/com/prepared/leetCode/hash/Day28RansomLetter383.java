@@ -1,4 +1,4 @@
-package com.prepared.leetCode.LinkedList;
+package com.prepared.leetCode.hash;
 
 /**
  * 383. 赎金信
