@@ -21,7 +21,7 @@ public class PrintUtil {
 
     public static void print(List<Integer> nums) {
         for (int i = 0; i < nums.size(); i++) {
-            System.out.print(nums.get(i));
+            System.out.print(nums.get(i) + ", ");
         }
         System.out.println();
     }
