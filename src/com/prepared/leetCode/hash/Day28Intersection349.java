@@ -11,12 +11,12 @@ import com.prepared.baseutil.PrintUtil;
  * @Author: zhongshibo
  * @Date: 2021/6/3 17:48
  */
-public class Day28Intersection347 {
+public class Day28Intersection349 {
 
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {2, 2};
-        Day28Intersection347 intersection347 = new Day28Intersection347();
+        Day28Intersection349 intersection347 = new Day28Intersection349();
         int[] res = intersection347.intersection(nums1, nums2);
         PrintUtil.print(res);
     }
