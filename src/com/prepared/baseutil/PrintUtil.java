@@ -2,7 +2,7 @@ package com.prepared.baseutil;
 
 import java.util.List;
 
-import com.prepared.leetCode.LinkedList.ListNode;
+import com.prepared.leetcode.LinkedList.ListNode;
 
 /**
  * 打印数据util
