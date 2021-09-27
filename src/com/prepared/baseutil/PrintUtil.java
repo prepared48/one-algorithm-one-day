@@ -1,8 +1,8 @@
 package com.prepared.baseutil;
 
-import java.util.List;
-
 import com.prepared.leetcode.LinkedList.ListNode;
+
+import java.util.List;
 
 /**
  * 打印数据util
@@ -15,6 +15,13 @@ public class PrintUtil {
     public static void print(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + ",");
+        }
+        System.out.println();
+    }
+
+    public static void print(char[] s) {
+        for (int i = 0; i < s.length; i++) {
+            System.out.print(s[i] + ",");
         }
         System.out.println();
     }
