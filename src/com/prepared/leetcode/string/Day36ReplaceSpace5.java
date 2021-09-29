@@ -11,9 +11,41 @@ public class Day36ReplaceSpace5 {
     public static void main(String[] args) {
         String  s = "We are happy.";
         Day36ReplaceSpace5 replaceSpace5 = new Day36ReplaceSpace5();
-        String res = replaceSpace5.replaceSpace(s);
+        String res = replaceSpace5.replaceSpace3(s);
         System.out.println(res);
     }
+
+
+    /**
+     * 双指针
+     *
+     * @param s
+     * @return
+     */
+    public String replaceSpace3(String s) {
+        char[] arr = new char[s.length() * 3];
+
+        int j = s.length() * 3 - 1;
+        int i = s.length() - 1;
+        int size = 0;
+        while (i < j && i >= 0) {
+            if(!" ".equals(String.valueOf(s.charAt(i)))) {
+                arr[j] = s.charAt(i);
+                j--;
+                i--;
+                size++;
+            }else {
+                arr[j] = '0';
+                arr[j-1] = '2';
+                arr[j-2] = '%';
+                j -= 3;
+                size += 3;
+                i--;
+            }
+        }
+        return new String(arr, s.length() * 3 - size, size);
+    }
+
 
     public String replaceSpace(String s) {
         StringBuilder sb = new StringBuilder();
