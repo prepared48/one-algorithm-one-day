@@ -1,5 +1,7 @@
 package com.prepared.leetcode.string;
 
+import com.prepared.baseutil.PrintUtil;
+
 /**
  * 28. 实现 strStr()
  *
@@ -12,12 +14,12 @@ public class Day39StrFunc28 {
     public static void main(String[] args) {
         Day39StrFunc28 strFunc28 = new Day39StrFunc28();
         String haystack = "aabaabaafa", needle = "aabaaf";
-        int res = strFunc28.strStr2(haystack, needle);
-        System.out.println(res);
-//        String s = "aaab";
-//        int[] next = new int[s.length()];
-//        strFunc28.getNext(next, s);
-//        PrintUtil.print(next);
+//        int res = strFunc28.strStr2(haystack, needle);
+//        System.out.println(res);
+        String s = "abcabcabcabc";
+        int[] next = new int[s.length()];
+        strFunc28.getNext(next, s);
+        PrintUtil.print(next);
     }
 
 
